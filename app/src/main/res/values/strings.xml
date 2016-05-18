@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NewsClient</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="nav_news">新闻</string>
+    <string name="nav_pic">图片</string>
+    <string name="nav_video">视频</string>
+    <string name="nav_weather">天气</string>
+    <string name="nav_about">关于</string>
+
+    <string name="news_item_date">日期:</string>
+    <string name="news_item_replyCont">评论数:</string>
+    <string name="news_item_source">来源:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

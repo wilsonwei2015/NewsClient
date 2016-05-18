@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/news_item_img_iv"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/ic_image_loadfail" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="8dp"
+        android:orientation="vertical">
+        <TextView
+            android:padding="2dp"
+            android:id="@+id/news_item_tile_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="新闻标题"/>
+
+        <TextView
+            android:padding="2dp"
+            android:id="@+id/news_item_cont_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新闻标题"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/news_item_source"/>
+
+            <TextView
+                android:padding="2dp"
+                android:id="@+id/news_item_source_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="华声历史"/>
+
+            <TextView
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/news_item_replyCont"/>
+            <TextView
+                android:padding="2dp"
+                android:id="@+id/news_item_relpycont_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/news_item_date"/>
+            <TextView
+                android:padding="2dp"
+                android:id="@+id/news_item_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-05-11 09:09:31"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2" />
+
+
+</LinearLayout>
