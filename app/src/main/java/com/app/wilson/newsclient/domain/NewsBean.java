@@ -14,7 +14,12 @@ public class NewsBean {
     private String imgsrc;
 
     private String ptime;
+
     private String digest;
+
+    private String docid;
+
+
 
 
 
@@ -66,5 +71,13 @@ public class NewsBean {
 
     public void setDigest(String digest) {
         this.digest = digest;
+    }
+
+    public String getDocid() {
+        return docid;
+    }
+
+    public void setDocid(String docid) {
+        this.docid = docid;
     }
 }

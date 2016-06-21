@@ -1,13 +1,9 @@
 package com.app.wilson.newsclient.main;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -15,6 +11,7 @@ import android.view.MenuItem;
 
 import com.app.wilson.newsclient.R;
 import com.app.wilson.newsclient.news.NewsFragment;
+import com.app.wilson.newsclient.video.VideoFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -62,6 +59,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_pic) {
 
         } else if (id == R.id.nav_video) {
+            getFragmentManager().beginTransaction().replace(R.id.content_layout,new VideoFragment(),"VideoFragment").commit();
+
 
         } else if (id == R.id.nav_weather) {
 

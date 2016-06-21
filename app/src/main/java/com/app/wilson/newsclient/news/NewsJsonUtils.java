@@ -1,6 +1,7 @@
 package com.app.wilson.newsclient.news;
 
 import com.app.wilson.newsclient.domain.NewsBean;
+import com.app.wilson.newsclient.domain.NewsDetailBean;
 import com.app.wilson.newsclient.domain.TopicBean;
 import com.app.wilson.newsclient.utils.JsonUtils;
 import com.app.wilson.newsclient.utils.LogUtils;
@@ -67,20 +68,20 @@ public class NewsJsonUtils {
         return beans;
     }
 
-//    public static NewsDetailBean readJsonNewsDetailBeans(String res, String docId) {
-//        NewsDetailBean newsDetailBean = null;
-//        try {
-//            JsonParser parser = new JsonParser();
-//            JsonObject jsonObj = parser.parse(res).getAsJsonObject();
-//            JsonElement jsonElement = jsonObj.get(docId);
-//            if(jsonElement == null) {
-//                return null;
-//            }
-//            newsDetailBean = JsonUtils.deserialize(jsonElement.getAsJsonObject(), NewsDetailBean.class);
-//        } catch (Exception e) {
-//            LogUtils.e(TAG, "readJsonNewsBeans error" , e);
-//        }
-//        return newsDetailBean;
-//    }
+    public static NewsDetailBean readJsonNewsDetailBeans(String res, String docId) {
+        NewsDetailBean newsDetailBean = null;
+        try {
+            JsonParser parser = new JsonParser();
+            JsonObject jsonObj = parser.parse(res).getAsJsonObject();
+            JsonElement jsonElement = jsonObj.get(docId);
+            if(jsonElement == null) {
+                return null;
+            }
+            newsDetailBean = JsonUtils.deserialize(jsonElement.getAsJsonObject(), NewsDetailBean.class);
+        } catch (Exception e) {
+            LogUtils.e(TAG, "readJsonNewsBeans error" , e);
+        }
+      return newsDetailBean;
+    }
 
 }

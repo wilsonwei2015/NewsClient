@@ -219,12 +219,25 @@ public class NewsFragment extends Fragment {
         });
 
     }
+
+
     private void freshTabs(){
 
         for(TopicBean tbBean:topicBeanList){
             TabLayout.Tab tb =topicTabLayout.newTab();
             tb.setText(tbBean.getTname());
             topicTabLayout.addTab(tb);
+        }
+    }
+
+
+    public class NewsItemOnClickListener implements View.OnClickListener{
+
+        @Override
+        public void onClick(View view) {
+
+
+
         }
     }
 

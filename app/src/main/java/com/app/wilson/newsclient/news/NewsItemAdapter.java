@@ -96,7 +96,7 @@ import java.util.zip.Inflater;
 
             ImageLoaderUtils.display(context,newsItemViewHolder.image,news.getImgsrc());
 
-            view.setOnClickListener(new NewsItemOnClickListener());
+            view.setOnClickListener(new NewsItemOnClickListener(news,this.context));
 
             return view;
         }
